@@ -173,12 +173,19 @@
       `Modelo: ${data.modelo}`,
       `Año: ${data.anio}`,
       `Versión / Motor / Caja: ${data.version}`,
+    ];
+
+    if (data.chasis) {
+      lines.push(`Número de chasis / VIN: ${data.chasis}`);
+    }
+
+    lines.push(
       "",
       "*Pieza solicitada:*",
       `Tipo: ${data.tipoPieza}`,
       `Detalle: ${data.detallePieza}`,
-      `Color requerido: ${data.colorPieza || "No especificado"}`,
-    ];
+      `Color requerido: ${data.colorPieza || "No especificado"}`
+    );
 
     if (data.observaciones) {
       lines.push(`Observaciones: ${data.observaciones}`);
@@ -197,7 +204,12 @@
       lines.push(`Responder directo: https://wa.me/${normalizedPhone}`);
     }
 
-    lines.push("", "_Enviado desde la web de PV Autopartes_");
+    lines.push(
+      "",
+      "📷 _Recordá adjuntar en este chat las fotos de la pieza rota/golpe si las tenés, así confirmamos color y estado._",
+      "",
+      "_Enviado desde la web de PV Autopartes_"
+    );
 
     return lines.join("\n");
   }
@@ -221,6 +233,7 @@
       detallePieza: document.getElementById("detallePieza").value.trim(),
       colorPieza: document.getElementById("colorPieza").value.trim(),
       observaciones: document.getElementById("observaciones").value.trim(),
+      chasis: document.getElementById("chasis").value.trim(),
       nombre: document.getElementById("nombre").value.trim(),
       telefono: document.getElementById("telefono").value.trim(),
       tipoCliente: tipoClienteInput ? tipoClienteInput.value : "",
