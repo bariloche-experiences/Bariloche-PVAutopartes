@@ -199,7 +199,7 @@
 
     lines.push(
       "",
-      "📷 _Recordá adjuntar en este chat las fotos de la pieza rota/golpe si las tenés, así confirmamos color y estado._",
+      "📷 _Subí acá mismo fotos del choque, la rotura o la pieza si las tenés, así confirmamos color y estado._",
       "",
       "_Enviado desde la web de PV Autopartes_"
     );
