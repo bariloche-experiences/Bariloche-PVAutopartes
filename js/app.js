@@ -173,19 +173,12 @@
       `Modelo: ${data.modelo}`,
       `Año: ${data.anio}`,
       `Versión / Motor / Caja: ${data.version}`,
-    ];
-
-    if (data.chasis) {
-      lines.push(`Número de chasis / VIN: ${data.chasis}`);
-    }
-
-    lines.push(
       "",
       "*Pieza solicitada:*",
       `Tipo: ${data.tipoPieza}`,
       `Detalle: ${data.detallePieza}`,
-      `Color requerido: ${data.colorPieza || "No especificado"}`
-    );
+      `Color requerido: ${data.colorPieza || "No especificado"}`,
+    ];
 
     if (data.observaciones) {
       lines.push(`Observaciones: ${data.observaciones}`);
@@ -233,7 +226,6 @@
       detallePieza: document.getElementById("detallePieza").value.trim(),
       colorPieza: document.getElementById("colorPieza").value.trim(),
       observaciones: document.getElementById("observaciones").value.trim(),
-      chasis: document.getElementById("chasis").value.trim(),
       nombre: document.getElementById("nombre").value.trim(),
       telefono: document.getElementById("telefono").value.trim(),
       tipoCliente: tipoClienteInput ? tipoClienteInput.value : "",

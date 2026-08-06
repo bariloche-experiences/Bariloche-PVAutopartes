@@ -380,8 +380,6 @@ p { margin: 0 0 1em; color: var(--text-muted); }
   margin-top: -2px;
 }
 
-.chasis-field { margin-top: 18px; }
-.optional-tag { font-weight: 400; color: var(--text-faint); }
 
 input[type="text"],
 input[type="tel"],
