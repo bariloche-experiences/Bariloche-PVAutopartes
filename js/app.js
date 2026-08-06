@@ -148,6 +148,22 @@
 
   /* ---------------- Envío a WhatsApp ---------------- */
 
+  /**
+   * Normaliza un teléfono argentino a formato internacional para wa.me.
+   * Espera código de área + número, sin 0 ni 15 (como pide el placeholder).
+   * Si la persona igual escribió el 0 o el 15, los recorta.
+   */
+  function normalizePhoneAR(raw) {
+    let digits = (raw || "").replace(/\D/g, "");
+    digits = digits.replace(/^0+/, ""); // saca el 0 de larga distancia si quedó
+    if (digits.startsWith("54")) {
+      digits = digits.slice(2);
+      digits = digits.replace(/^9/, ""); // evita duplicar el 9 si ya lo tenía
+    }
+    digits = digits.replace(/^(\d{2,4})15/, "$1"); // saca el 15 si quedó pegado al código de área
+    return digits ? `549${digits}` : "";
+  }
+
   function buildWhatsAppMessage(data) {
     const lines = [
       "🔧 *Nueva solicitud de repuesto - PV Autopartes*",
@@ -172,11 +188,16 @@
       "",
       "*Datos del solicitante:*",
       `Nombre: ${data.nombre}`,
-      `Teléfono: ${data.telefono}`,
-      `Tipo de cliente: ${data.tipoCliente}`,
-      "",
-      "_Enviado desde la web de PV Autopartes_"
+      `WhatsApp: ${data.telefono}`,
+      `Tipo de cliente: ${data.tipoCliente}`
     );
+
+    const normalizedPhone = normalizePhoneAR(data.telefono);
+    if (normalizedPhone) {
+      lines.push(`Responder directo: https://wa.me/${normalizedPhone}`);
+    }
+
+    lines.push("", "_Enviado desde la web de PV Autopartes_");
 
     return lines.join("\n");
   }
