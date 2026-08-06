@@ -11,9 +11,9 @@
   --border: #33393f;
   --border-soft: #2a2f34;
 
-  --text: #edf0f2;
-  --text-muted: #9aa4ab;
-  --text-faint: #6b747b;
+  --text: #f5f7f8;
+  --text-muted: #c1c9ce;
+  --text-faint: #9aa3aa;
 
   --steel: #4a86ad;
   --steel-dark: #356485;
@@ -187,10 +187,7 @@ p { margin: 0 0 1em; color: var(--text-muted); }
 /* ---------- Hero ---------- */
 .hero {
   padding: 90px 0 70px;
-  background:
-    radial-gradient(circle at 15% 20%, rgba(74, 134, 173, 0.14), transparent 45%),
-    radial-gradient(circle at 85% 0%, rgba(193, 68, 14, 0.12), transparent 40%),
-    var(--bg);
+  background: var(--bg);
   border-bottom: 1px solid var(--border-soft);
 }
 
@@ -257,9 +254,7 @@ p { margin: 0 0 1em; color: var(--text-muted); }
   border: 1px solid var(--border-soft);
   border-radius: var(--radius);
   padding: 26px 22px;
-  transition: border-color 0.15s ease, transform 0.15s ease;
 }
-.card:hover { border-color: var(--steel-dark); transform: translateY(-2px); }
 
 .card-icon {
   width: 40px;
