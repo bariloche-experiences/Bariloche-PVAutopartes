@@ -17,6 +17,8 @@ const VEHICLE_DATA = {
     "Escarabajo (1500)": { minYear: 1953, maxYear: 1985, versions: ["1.3 Nafta - Manual 4 vel.", "1.6 Nafta - Manual 4 vel."] },
     "Brasilia": { minYear: 1973, maxYear: 1982, versions: ["1.6 Nafta - Manual 4 vel."] },
     "Gacel": { minYear: 1983, maxYear: 1994, versions: ["1.6 Nafta - Manual 4 vel."] },
+    "Polo Classic": { minYear: 1996, maxYear: 2001, versions: ["1.6 8V Nafta - Manual 5 vel.", "1.8 8V Nafta - Manual 5 vel."] },
+    "Caddy": { minYear: 1996, maxYear: 2008, versions: ["1.6 8V Nafta - Manual 5 vel.", "1.9 SDI Diesel - Manual 5 vel."] },
     "Gol": { minYear: 1996, maxYear: 2023, versions: ["1.4 8V Nafta - Manual 5 vel.", "1.6 8V Nafta - Manual 5 vel.", "1.6 Power - Manual 5 vel.", "1.6 Power - Automática"] },
     "Voyage": { minYear: 2008, maxYear: 2021, versions: ["1.6 8V Nafta - Manual 5 vel.", "1.6 MSI - Manual 5 vel.", "1.6 MSI - Automática"] },
     "Quantum": { minYear: 1985, maxYear: 1993, versions: ["1.8 Nafta - Manual 5 vel.", "2.0 Nafta - Manual 5 vel."] },
@@ -74,6 +76,8 @@ const VEHICLE_DATA = {
   },
 
   "Chevrolet": {
+    "400": { minYear: 1962, maxYear: 1969, versions: ["1.8 Nafta - Manual 4 vel."] },
+    "Chevy": { minYear: 1969, maxYear: 1978, versions: ["2.5 Nafta - Manual 4 vel."] },
     "Chevette": { minYear: 1979, maxYear: 1994, versions: ["1.4 Nafta - Manual 4 vel.", "1.6 Nafta - Manual 4 vel."] },
     "Monza": { minYear: 1982, maxYear: 1996, versions: ["1.8 Nafta - Manual 5 vel.", "2.0 Nafta - Manual 5 vel."] },
     "Kadett": { minYear: 1989, maxYear: 1998, versions: ["1.8 8V Nafta - Manual 5 vel.", "2.0 8V Nafta - Manual 5 vel."] },
@@ -105,8 +109,11 @@ const VEHICLE_DATA = {
 
   "Fiat": {
     "600": { minYear: 1960, maxYear: 1982, versions: ["767cc Nafta - Manual 4 vel.", "903cc Nafta - Manual 4 vel."] },
+    "1100": { minYear: 1960, maxYear: 1963, versions: ["1.1 Nafta - Manual 4 vel."] },
     "1500 / 1600": { minYear: 1966, maxYear: 1982, versions: ["1.5 Nafta - Manual 4 vel.", "1.6 Nafta - Manual 4 vel."] },
+    "125": { minYear: 1972, maxYear: 1982, versions: ["1.3 Nafta - Manual 4 vel.", "1.5 Nafta - Manual 4 vel."] },
     "128": { minYear: 1971, maxYear: 1984, versions: ["1.1 Nafta - Manual 4 vel.", "1.3 Nafta - Manual 4 vel."] },
+    "133": { minYear: 1977, maxYear: 1982, versions: ["0.9 Nafta - Manual 4 vel."] },
     "Spazio": { minYear: 1980, maxYear: 1988, versions: ["1.3 Nafta - Manual 4 vel.", "1.5 Nafta - Manual 4 vel."] },
     "Argenta": { minYear: 1981, maxYear: 1986, versions: ["1.5 Nafta - Manual 4 vel.", "1.6 Nafta - Manual 5 vel."] },
     "Uno": { minYear: 1984, maxYear: 2021, versions: ["1.3 8V Nafta - Manual 5 vel.", "1.4 8V Nafta - Manual 5 vel."] },
@@ -135,6 +142,7 @@ const VEHICLE_DATA = {
   },
 
   "Renault": {
+    "Dauphine": { minYear: 1960, maxYear: 1970, versions: ["0.8 Nafta - Manual 3 vel."] },
     "4 (4L)": { minYear: 1970, maxYear: 1994, versions: ["1.1 Nafta - Manual 4 vel."] },
     "6": { minYear: 1968, maxYear: 1982, versions: ["1.1 Nafta - Manual 4 vel."] },
     "12": { minYear: 1970, maxYear: 1996, versions: ["1.4 Nafta - Manual 4 vel.", "1.6 Nafta - Manual 4 vel."] },
@@ -142,6 +150,7 @@ const VEHICLE_DATA = {
     "18": { minYear: 1981, maxYear: 1990, versions: ["1.6 Nafta - Manual 4 vel.", "2.0 Nafta - Manual 5 vel."] },
     "Fuego": { minYear: 1982, maxYear: 1992, versions: ["1.6 Nafta - Manual 5 vel.", "2.0 Nafta - Manual 5 vel."] },
     "9 (R9)": { minYear: 1982, maxYear: 1991, versions: ["1.4 Nafta - Manual 4 vel.", "1.6 Nafta - Manual 5 vel."] },
+    "11 (R11)": { minYear: 1983, maxYear: 1991, versions: ["1.4 Nafta - Manual 4 vel.", "1.6 Nafta - Manual 5 vel."] },
     "Alliance": { minYear: 1990, maxYear: 1995, versions: ["1.6 Nafta - Manual 5 vel."] },
     "19": { minYear: 1990, maxYear: 1997, versions: ["1.6 Nafta - Manual 5 vel.", "1.9 Diesel - Manual 5 vel."] },
     "21": { minYear: 1990, maxYear: 1996, versions: ["2.0 Nafta - Manual 5 vel.", "2.2 Nafta - Manual 5 vel."] },
@@ -162,11 +171,13 @@ const VEHICLE_DATA = {
     "Oroch": { minYear: 2015, maxYear: 2023, versions: ["1.6 Nafta - Manual 5 vel.", "2.0 Nafta - Manual/Automática"] },
     "Koleos": { minYear: 2008, maxYear: 2023, versions: ["2.5 Nafta - Automática (4x4)"] },
     "Kwid": { minYear: 2018, maxYear: 2023, versions: ["1.0 Nafta - Manual 5 vel.", "1.0 Nafta - Automática"] },
+    "Alaskan": { minYear: 2017, maxYear: 2023, versions: ["2.3 dCi Diesel - Manual/Automática (4x4)"] },
     "Trafic": { minYear: 2002, maxYear: 2023, versions: ["2.0 dCi Diesel - Manual 6 vel."] },
     "Master": { minYear: 1998, maxYear: 2023, versions: ["2.3 dCi Diesel - Manual 6 vel."] }
   },
 
   "Peugeot": {
+    "403": { minYear: 1957, maxYear: 1965, versions: ["1.5 Nafta - Manual 4 vel."] },
     "404": { minYear: 1960, maxYear: 1980, versions: ["1.6 Nafta - Manual 4 vel.", "1.8 Diesel - Manual 4 vel."] },
     "305": { minYear: 1981, maxYear: 1990, versions: ["1.5 Nafta - Manual 4 vel.", "1.9 Diesel - Manual 5 vel."] },
     "504": { minYear: 1969, maxYear: 1999, versions: ["2.0 Nafta - Manual 4 vel.", "2.3 Diesel - Manual 4 vel."] },
@@ -191,6 +202,8 @@ const VEHICLE_DATA = {
 
   "Citroën": {
     "3CV (2CV)": { minYear: 1960, maxYear: 1990, versions: ["602cc Nafta - Manual 4 vel."] },
+    "Ami 8": { minYear: 1970, maxYear: 1978, versions: ["602cc Nafta - Manual 4 vel."] },
+    "Mehari": { minYear: 1971, maxYear: 1980, versions: ["602cc Nafta - Manual 4 vel."] },
     "GS": { minYear: 1975, maxYear: 1986, versions: ["1.2 Nafta - Manual 4 vel.", "1.3 Nafta - Manual 4 vel."] },
     "AX": { minYear: 1987, maxYear: 1997, versions: ["1.1 Nafta - Manual 5 vel.", "1.4 Nafta - Manual 5 vel."] },
     "C15": { minYear: 1985, maxYear: 2005, versions: ["1.4 Nafta - Manual 4 vel.", "1.9 Diesel - Manual 5 vel."] },
@@ -378,5 +391,36 @@ const VEHICLE_DATA = {
     "QQ": { minYear: 2007, maxYear: 2015, versions: ["1.0 Nafta - Manual 5 vel."] },
     "Arauca": { minYear: 2012, maxYear: 2018, versions: ["1.5 Nafta - Manual 5 vel."] },
     "Tiggo": { minYear: 2010, maxYear: 2023, versions: ["2.0 Nafta - Manual/Automática"] }
+  },
+
+  "Haval": {
+    "H6": { minYear: 2021, maxYear: 2023, versions: ["1.5 Turbo Nafta - Automática"] },
+    "Jolion": { minYear: 2022, maxYear: 2023, versions: ["1.5 Turbo Nafta - Automática"] }
+  },
+
+  "JAC": {
+    "S3": { minYear: 2019, maxYear: 2023, versions: ["1.5 Nafta - Manual/Automática"] },
+    "T40": { minYear: 2021, maxYear: 2023, versions: ["1.5 Turbo Nafta - Manual/Automática"] },
+    "T60": { minYear: 2022, maxYear: 2023, versions: ["2.0 Turbo Diesel - Automática (4x4)"] }
+  },
+
+  "DFSK": {
+    "C32": { minYear: 2020, maxYear: 2023, versions: ["1.5 Nafta - Manual 5 vel."] },
+    "C35": { minYear: 2019, maxYear: 2023, versions: ["1.5 Nafta - Manual 5 vel."] }
+  },
+
+  "Jetour": {
+    "Dashing": { minYear: 2023, maxYear: 2023, versions: ["1.5 Turbo Nafta - Automática"] },
+    "X70": { minYear: 2023, maxYear: 2023, versions: ["1.5 Turbo Nafta - Automática"] }
+  },
+
+  "BAIC": {
+    "X35": { minYear: 2022, maxYear: 2023, versions: ["1.5 Nafta - Manual/Automática"] },
+    "X55": { minYear: 2022, maxYear: 2023, versions: ["1.5 Turbo Nafta - Automática"] }
+  },
+
+  "BYD": {
+    "Dolphin": { minYear: 2023, maxYear: 2023, versions: ["Eléctrico - Automática"] },
+    "Song Plus": { minYear: 2023, maxYear: 2023, versions: ["Híbrido - Automática", "Eléctrico - Automática"] }
   }
 };

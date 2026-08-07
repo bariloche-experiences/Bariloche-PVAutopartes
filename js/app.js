@@ -1,5 +1,5 @@
 /**
- * PV Autopartes — lógica de la landing:
+ * PyF Autopartes — lógica de la landing:
  *  - Selector de vehículo en cascada (Marca -> Modelo -> Año -> Versión)
  *  - Menú móvil
  *  - Armado y envío del mensaje de WhatsApp al enviar el formulario
@@ -166,7 +166,7 @@
 
   function buildWhatsAppMessage(data) {
     const lines = [
-      "🔧 *Nueva solicitud de repuesto - PV Autopartes*",
+      "🔧 *Nueva solicitud de repuesto - PyF Autopartes*",
       "",
       "*Vehículo:*",
       `Marca: ${data.marca}`,
@@ -199,11 +199,11 @@
 
     lines.push(
       "",
-      "📷 _Subí acá mismo fotos del choque, la rotura o la pieza si las tenés, así confirmamos color y estado._",
+      "📷 _Después de mandar este mensaje, subí en este mismo chat fotos del choque, la rotura o la pieza si las tenés, así confirmamos color y estado._",
       "",
       "_Envíos a todo el país. El costo de envío corre por cuenta del comprador y no está incluido en la cotización._",
       "",
-      "_Enviado desde la web de PV Autopartes_"
+      "_Enviado desde la web de PyF Autopartes_"
     );
 
     return lines.join("\n");
