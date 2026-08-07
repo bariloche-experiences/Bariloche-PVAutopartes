@@ -166,7 +166,7 @@
 
   function buildWhatsAppMessage(data) {
     const lines = [
-      "🔧 *Nueva solicitud de repuesto - PyF Autopartes*",
+      "🔧 *Nueva cotización de repuesto - PyF Autopartes*",
       "",
       "*Vehículo:*",
       `Marca: ${data.marca}`,
