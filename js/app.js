@@ -201,6 +201,8 @@
       "",
       "📷 _Subí acá mismo fotos del choque, la rotura o la pieza si las tenés, así confirmamos color y estado._",
       "",
+      "_Envíos a todo el país. El costo de envío corre por cuenta del comprador y no está incluido en la cotización._",
+      "",
       "_Enviado desde la web de PV Autopartes_"
     );
 
